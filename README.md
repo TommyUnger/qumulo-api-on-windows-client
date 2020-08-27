@@ -7,6 +7,8 @@ Running the Qumulo API and qq tool from Windows client machine is a pretty quick
 * **A Windows 10 machine or VM**. In theory, other Windows platforms will work, but this is the one I've tested.
 * **Qumulo storage API access**
 
+---
+
 ### Install Python software and virtual environment on Windows 10
 
 1. Download the Windows x86-64 executable installer from: https://www.python.org/downloads/windows/ (in the example, this is what we installed: https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)
@@ -22,6 +24,7 @@ Running the Qumulo API and qq tool from Windows client machine is a pretty quick
 1. Create a virtual environment with the newly installed python:
     ```C:\qumulo-work\> C:\Users\qumulo\AppData\Local\Programs\Python\Python37\python.exe -m venv python379```
 
+---
 
 ### Run a python virtual environment and install python libraries
 
@@ -34,6 +37,7 @@ Running the Qumulo API and qq tool from Windows client machine is a pretty quick
 
 At this point you're fully up and running with the latest Qumulo API bindings and tools as well as the Jupyter python notebook tool which is a great way to explore and use the Qumulo API python bindings.
 
+---
 
 ### Using the Qumulo API via the qq command line interface tool (CLI)
 
@@ -46,6 +50,7 @@ First, we connect to a Qumulo cluster with the included `qq.exe` CLI tool that i
 1. See the filesystem aggregate data at the top of the filesystem:
     ```C:\qumulo-work\> qq.exe --host qumulo.demo fs_read_dir_aggregates --path / --max-entries 0```
 
+---
 
 ### Using the Qumulo API via Jupyter notebook
 
