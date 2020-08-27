@@ -1,6 +1,7 @@
-# How to get up and running with the Qumulo API and qq tool from a Windows client machine
+# Using the Qumulo API and qq tool on Windows
 
-Running the Qumulo API and qq tool from Windows client machine is a pretty quick process thanks to the easy installation of python and the Qumulo API tools. This readme will guide you through the steps to get up and running.
+Running the Qumulo API and qq (command line interface) tool from a Windows client machine is a pretty quick process thanks to the ease of installation for python and the Qumulo API tools. This readme will guide you through the steps to get up and running in minutes.
+
 
 ## Requirements
 
@@ -8,6 +9,7 @@ Running the Qumulo API and qq tool from Windows client machine is a pretty quick
 * **Qumulo storage API access**
 
 ---
+
 
 ### Install Python software and virtual environment on Windows 10
 
@@ -26,6 +28,7 @@ Running the Qumulo API and qq tool from Windows client machine is a pretty quick
 
 ---
 
+
 ### Run a python virtual environment and install python libraries
 
 1. From the command prompt, activate the virtual environment
@@ -39,7 +42,8 @@ At this point you're fully up and running with the latest Qumulo API bindings an
 
 ---
 
-### Using the Qumulo API via the qq command line interface tool (CLI)
+
+### Use the Qumulo API via the qq.exe command line interface(CLI) tool
 
 First, we connect to a Qumulo cluster with the included `qq.exe` CLI tool that is part of the `qumulo_api` package. Then we'll run a few simple commands.
 
@@ -52,7 +56,8 @@ First, we connect to a Qumulo cluster with the included `qq.exe` CLI tool that i
 
 ---
 
-### Using the Qumulo API via Jupyter notebook
+
+### Use the Qumulo API via Jupyter notebook
 
 1. From the command prompt run the following command
     ```C:\qumulo-work\> jupyter-notebook```
