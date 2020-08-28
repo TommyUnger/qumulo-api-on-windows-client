@@ -80,7 +80,7 @@ First, we connect to a Qumulo cluster with the included `qq.exe` CLI tool that i
     C:\qumulo-work\> jupyter-notebook
     ```
 1. Create a new python3 notebook by clicking the **New** button in the upper right
-1. Paste in the following code 
+1. Paste in the following code in the newly created file
     ```
     import pprint
     from qumulo.lib.auth import get_credentials
@@ -94,4 +94,27 @@ First, we connect to a Qumulo cluster with the included `qq.exe` CLI tool that i
     print("\n#### read dir ####")
     pprint.pprint(rc.fs.read_dir_aggregates(path='/', max_entries=0))
     ```
+1. Press [Shift]+[Enter] to run the code. Output should look like this:
+    ```
+    #### who am i ####
+    {'home_directory': None,
+     'id': '25769805056',
+     'name': 'AD\\tommy',
+     'primary_group': '25769804289',
+     'sid': 'S-1-5-21-3192274952-881459882-370606532-1280',
+     'uid': ''}
 
+    #### read dir ####
+    {'files': [],
+     'id': '2',
+     'path': '/',
+     'total_capacity': '27717534380032',
+     'total_data': '27702104330240',
+     'total_directories': '207067',
+     'total_files': '2605796',
+     'total_meta': '15430049792',
+     'total_named_stream_data': '27754496',
+     'total_named_streams': '5531',
+     'total_other_objects': '0',
+     'total_symlinks': '10776'}
+    ```
